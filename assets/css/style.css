@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(238, 255, 251);
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  margin: 2em auto 0;
+  width: 80%;
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 0 0 10px 10px;
+  transition: all 0.3s ease-in;
+}
+
+header {
+  background: url("/assets/images/bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 150px;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  color: white;
+  margin: 1.5em 0 0 2rem;
+}
+
+#date {
+  color: rgb(209, 209, 209);
+}
+
+ul {
+  margin: 1em 0.8em;
+}
+
+ul li {
+  display: block;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 2px solid rgb(224, 224, 224);
+}
+
+li:last-child {
+  border: none;
+}
+
+.item {
+  display: flex;
+}
+
+.text {
+  flex-grow: 1;
+  line-height: 16px;
+  word-wrap: break-word;
+  width: 70%;
+  margin: 0 0 0 0.5em;
+  color: #696d76;
+}
+
+.clear {
+  display: block;
+  float: right;
+  margin: 10px;
+}
+
+.ref {
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.ref:hover {
+  transform: rotate(90deg);
+}
+
+.linethrough {
+  text-decoration: line-through;
+  color: #c7cad2;
+}
+
+.fa-check-circle:before {
+  color: #43e19e;
+  font-size: 1.3em;
+}
+
+.fa-circle:before {
+  color: #dddee0;
+  font-size: 1.3em;
+}
+
+#add {
+  margin-top: 14px;
+}
+
+.fa-angle-double-right:before {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.de {
+  color: #dddee0;
+}
+
+.de:hover {
+  color: red;
+}
+
+.time {
+  font-size: 0.6em;
+  margin: 0 1em;
+}
+
+.add-item {
+  background: #81a0cb;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+}
+
+input {
+  flex: 0 0 80%;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  margin: 0 2.8em 0 1.9em;
+  color: #fff;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: inherit;
+}
+
+.pagination li {
+  display: inline-block;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 30%;
+  }
+}
