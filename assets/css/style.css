@@ -49,10 +49,6 @@ li {
   border-bottom: 2px solid rgb(224, 224, 224);
 }
 
-li:last-child {
-  border: none;
-}
-
 .item {
   display: flex;
 }

@@ -58,9 +58,10 @@ function addToDo(toDo, id, done, trash, date) {
   const DONE = done ? CHECK : UNCHECK;
   const LINE = done ? LINE_THROUGH : "";
 
-  const item = `<li class="item">
+  const item = `<li class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
     <i class="co far ${DONE}" job="complete" id="${id}"></i>
-    <p class="text ${LINE}"> ${toDo}</p> <span class="time">${timeAgo}</span>
+    <h5 class="text ${LINE}"> ${toDo}</h5> <small>${timeAgo}</small>
     <i class="de fa fa-trash" job="delete" id="${id}"></i>
     </li>`;
 
